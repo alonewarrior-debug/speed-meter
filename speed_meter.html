@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>3D Typing Speed Test</title>
+
+    <link rel="stylesheet" href="speed_meter.css">
+</head>
+
+<body>
+
+    <!-- 3D Background -->
+    <div class="scene">
+
+        <div class="cube cube1"></div>
+        <div class="cube cube2"></div>
+        <div class="cube cube3"></div>
+
+        <div class="orb orb1"></div>
+        <div class="orb orb2"></div>
+
+    </div>
+
+
+    <main class="container">
+
+        <div id="typingCard" class="typing-card">
+
+            <!-- Header -->
+            <header>
+
+                <div>
+                    <h1>Typing Speed</h1>
+
+                    <p>
+                        Master your keyboard 🚀
+                    </p>
+                </div>
+
+                <div class="keyboard-3d">
+
+                    <div class="key">A</div>
+                    <div class="key">S</div>
+                    <div class="key">D</div>
+                    <div class="key">F</div>
+
+                </div>
+
+            </header>
+
+
+            <!-- Stats -->
+            <div class="stats">
+
+                <div class="stat">
+
+                    <span>TIME</span>
+
+                    <strong id="timer">
+                        60
+                    </strong>
+
+                    <small>SEC</small>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <span>SPEED</span>
+
+                    <strong id="wpm">
+                        0
+                    </strong>
+
+                    <small>WPM</small>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <span>ACCURACY</span>
+
+                    <strong id="accuracy">
+                        100
+                    </strong>
+
+                    <small>%</small>
+
+                </div>
+
+
+                <div class="stat">
+
+                    <span>ERRORS</span>
+
+                    <strong id="errors">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- Progress -->
+            <div class="progress-box">
+
+                <div
+                    id="progress"
+                    class="progress"
+                ></div>
+
+            </div>
+
+
+            <!-- Text -->
+            <div
+                id="textDisplay"
+                class="text-display"
+            ></div>
+
+
+            <!-- Input -->
+            <textarea
+                id="textInput"
+                placeholder="Click Start and begin typing..."
+                spellcheck="false"
+                autocomplete="off"
+                autocorrect="off"
+                autocapitalize="off"
+                disabled
+            ></textarea>
+
+
+            <!-- Buttons -->
+            <div class="buttons">
+
+                <button
+                    id="startBtn"
+                    class="btn start"
+                >
+                    ▶ START TEST
+                </button>
+
+                <button
+                    id="resetBtn"
+                    class="btn reset"
+                >
+                    ↻ RESET
+                </button>
+
+            </div>
+
+
+            <!-- Result -->
+            <div
+                id="result"
+                class="result hidden"
+            >
+
+                <div class="trophy">
+                    🏆
+                </div>
+
+                <h2>TEST COMPLETE</h2>
+
+                <p>
+                    Your typing performance
+                </p>
+
+
+                <div class="result-stats">
+
+                    <div>
+                        <strong id="finalWpm">
+                            0
+                        </strong>
+
+                        <span>WPM</span>
+                    </div>
+
+
+                    <div>
+                        <strong id="finalAccuracy">
+                            0%
+                        </strong>
+
+                        <span>ACCURACY</span>
+                    </div>
+
+
+                    <div>
+                        <strong id="finalErrors">
+                            0
+                        </strong>
+
+                        <span>ERRORS</span>
+                    </div>
+
+                </div>
+
+
+                <button
+                    id="tryAgainBtn"
+                    class="btn start"
+                >
+                    🔄 TRY AGAIN
+                </button>
+
+            </div>
+
+
+            <footer>
+                <span> TYPING EXPERIENCE</span>
+            </footer>
+
+        </div>
+
+    </main>
+
+
+    <script src="speed_meter.js"></script>
+
+</body>
+
+</html>
